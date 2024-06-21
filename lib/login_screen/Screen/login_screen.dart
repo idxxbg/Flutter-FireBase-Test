@@ -15,13 +15,12 @@ class _LoginScreenState extends State<LoginScreen> {
     double screenHeight = MediaQuery.of(context).size.height;
     late bool isLoading;
 
-    void dispose() {
-      super.dispose();
-      emailController.dispose();
+    // void dispose() {
+    //   super.dispose();
+    //   emailController.dispose();
 
-      passController.dispose();
-    }
-
+    //   passController.dispose();
+    // }
     void loginUser() async {
       String res = await AuthSevices().loginUser(
         email: emailController.text,

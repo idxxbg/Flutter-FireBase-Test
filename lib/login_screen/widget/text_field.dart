@@ -44,7 +44,7 @@ class TextFieldInput extends StatelessWidget {
             borderRadius: BorderRadius.circular(16),
           ),
           focusedBorder: OutlineInputBorder(
-            borderSide: BorderSide.none,
+            borderSide: const BorderSide(color: Colors.blue, width: 2),
             borderRadius: BorderRadius.circular(16),
           ),
         ),
